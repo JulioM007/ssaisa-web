@@ -113,7 +113,8 @@ export function PropertyForm({ property, action, submitLabel = "Guardar propieda
     setAmenities((prev) => prev.filter((x) => x !== a))
   }
 
-  const charFields: { name: keyof PropertyFormData; label: string; step: number; placeholder: string }[] = [
+  type NumericField = "bedrooms" | "bathrooms" | "parkings" | "floors" | "buildingM2" | "terrainM2"
+  const charFields: { name: NumericField; label: string; step: number; placeholder: string }[] = [
     { name: "bedrooms", label: "Recámaras", step: 1, placeholder: "3" },
     { name: "bathrooms", label: "Baños", step: 0.5, placeholder: "2.5" },
     { name: "parkings", label: "Cajones", step: 1, placeholder: "2" },
