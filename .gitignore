@@ -30,8 +30,11 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — NUNCA commitear .env.local ni .env
+.env
+.env.local
+.env.test
+# .env.example sí se commitea (plantilla pública)
 
 # vercel
 .vercel
@@ -39,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Prisma client con output custom (ya no se usa)
+# /src/generated/prisma

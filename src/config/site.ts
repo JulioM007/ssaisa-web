@@ -1,0 +1,32 @@
+export const siteConfig = {
+  name: "SSAISA",
+  fullName: "Sistemas y Servicios de Administración Inmobiliaria",
+  description:
+    "Promotora inmobiliaria en Monterrey, Nuevo León. Conectamos personas, inversionistas y empresas con las mejores oportunidades del área metropolitana.",
+  url: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
+  phone: "8118274957",
+  whatsapp: "528118274957",
+  whatsappMessage: "Hola, me interesa conocer más sobre sus propiedades.",
+  email: "contacto@ssaisa.com.mx",
+  address: "Monterrey, Nuevo León, México",
+  socialLinks: {
+    facebook: "https://facebook.com/ssaisa",
+    instagram: "https://instagram.com/ssaisa",
+    linkedin: "https://linkedin.com/company/ssaisa",
+  },
+  municipalities: [
+    "Monterrey",
+    "San Pedro Garza García",
+    "San Nicolás de los Garza",
+    "Guadalupe",
+    "Apodaca",
+    "Escobedo",
+    "Santa Catarina",
+    "García",
+    "Santiago",
+    "Juárez",
+    "Cadereyta Jiménez",
+    "Ciénega de Flores",
+    "Salinas Victoria",
+  ],
+} as const
