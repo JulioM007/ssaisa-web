@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Prisma client con output custom (ya no se usa)
 # /src/generated/prisma
+
+# Seed — solo uso local, la BD de producción ya está sembrada
+prisma/seed.ts
